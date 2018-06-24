@@ -51,8 +51,8 @@ public class TransactionServiceImpl implements TransactionService {
      * @return true if it is older than parametrized value seconds. False otherwise.
      */
     private boolean isTransactionMetricOlderThan(final LocalDateTime transactionTime) {
-        long differenceIsSeconds = transactionTime.until(LocalDateTime.now(ZoneOffset.UTC), ChronoUnit.SECONDS);
-        return differenceIsSeconds > transactionLimitInSeconds;
+        long differenceInSeconds = transactionTime.until(LocalDateTime.now(ZoneOffset.UTC), ChronoUnit.SECONDS);
+        return differenceInSeconds > transactionLimitInSeconds;
     }
 
     /**

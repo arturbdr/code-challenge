@@ -15,11 +15,11 @@ import javax.validation.constraints.NotNull;
 public class TransactionMetricsRequest {
 
     @NotNull(message = "The transaction amount is required ")
-    @ApiModelProperty(notes = "Transaction amount", example = "12.3", required = true)
+    @ApiModelProperty(notes = "Transaction amount. Is a double specifying the amount", example = "12.3", required = true)
     private Double amount;
 
     @NotNull(message = "The transaction timestamp is required ")
     @ApiModelProperty(notes = "Transaction time in epoch in millis in UTC " +
-            "time zone (this is not current time)", example = "1478192204000", required = true)
+            "time zone. Is a Long specifying unix time format in milliseconds", example = "1478192204000", required = true)
     private Long timestamp;
 }
