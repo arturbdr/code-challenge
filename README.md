@@ -50,3 +50,7 @@ Both their badges are updated automatically at every push to github.
 ### How to start this project
 ``mvn spring-boot:run``
 It will start in the port 8080. 
+
+### Embedded Maven
+If maven is no installed, there's and embedded maven in this application. To use it: ``./mvnw spring-boot:run`` for mac/unix SO or ``mvnw.cmd spring-boot:run`` for windows SO
+It will start in the port 8080.
