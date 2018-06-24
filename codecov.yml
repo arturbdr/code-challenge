@@ -1,0 +1,3 @@
+ignore:
+  - "**/n26/challenge/config/**"
+  - "**/n26/challenge/StatisticsApplication.java"
