@@ -17,7 +17,7 @@ In the usecase there is a Spring Scheduler configured to be executed at every se
 remove old Transaction Metrics from the inMemory database (transactions with more than 60 seconds).
     
 ### Frameworks and libraries used
-- Spring Boot version 2.0.3 - For exposing the RESFull endpoint, Dependency Injection and all testing platform
+- Spring Boot version 2.1.3 - For exposing the RESTFull endpoint, Dependency Injection and all testing platform provided by Spring
 - Lombok - To reduce Java verbosity using his annotations
 - Swagger - To provide a documentation along with a friendly UI. It can be accessed in [Swagger](http://localhost:8080/swagger-ui.html) once the application's started
 - FixtureFactory - Used in the tests to create templates of the objects.
